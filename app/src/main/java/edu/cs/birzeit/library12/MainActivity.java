@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         spnTypes = findViewById(R.id.spnTypes);
         txtResult = findViewById(R.id.txtResults);
         BookDa bookDa = new BookDa();
+        //this is new code
         String[] types = bookDa.getBookTypes();
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, types);
